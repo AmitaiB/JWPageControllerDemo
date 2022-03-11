@@ -17,10 +17,12 @@
 		11E28C9E27DA7AE9008CF3BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E28C9C27DA7AE9008CF3BA /* LaunchScreen.storyboard */; };
 		11E28CB027DA7D04008CF3BA /* JWPlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11E28CAF27DA7D04008CF3BA /* JWPlayerKit */; };
 		11E28CB227DA7F03008CF3BA /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E28CB127DA7F03008CF3BA /* PageViewController.swift */; };
+		11E28CB427DA7F2B008CF3BA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E28CB327DA7F2B008CF3BA /* PlayerViewController.swift */; };
 		11EA723627DA86E1002701F7 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA723527DA86E1002701F7 /* Playlist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1150039827DBBFE5001BD267 /* PlayerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerViewController.storyboard; sourceTree = "<group>"; };
 		1150039A27DBD6B5001BD267 /* Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secure.swift; sourceTree = "<group>"; };
 		11E28C8E27DA7AE7008CF3BA /* JWPageControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWPageControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E28C9127DA7AE7008CF3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +35,7 @@
 		11E28CA527DA7B12008CF3BA /* JWPageControllerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JWPageControllerDemo.entitlements; sourceTree = "<group>"; };
 		11E28CAD27DA7C21008CF3BA /* JWPlayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = JWPlayer; sourceTree = "<group>"; };
 		11E28CB127DA7F03008CF3BA /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		11E28CB327DA7F2B008CF3BA /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		11EA723527DA86E1002701F7 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +58,7 @@
 				11E28C9727DA7AE7008CF3BA /* Main.storyboard */,
 				11E28C9527DA7AE7008CF3BA /* HomeViewController.swift */,
 				11E28CB127DA7F03008CF3BA /* PageViewController.swift */,
+				11E28CB327DA7F2B008CF3BA /* PlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 				11E28C9227DA7AE7008CF3BA /* AppDelegate.swift in Sources */,
 				11E28C9427DA7AE7008CF3BA /* SceneDelegate.swift in Sources */,
 				11E28CB227DA7F03008CF3BA /* PageViewController.swift in Sources */,
+				11E28CB427DA7F2B008CF3BA /* PlayerViewController.swift in Sources */,
 				1150039B27DBD6B5001BD267 /* Secure.swift in Sources */,
 				11EA723627DA86E1002701F7 /* Playlist.swift in Sources */,
 			);

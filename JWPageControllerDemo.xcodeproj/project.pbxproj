@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1150039727DBBFAE001BD267 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 1150039627DBBFAE001BD267 /* Reusable */; };
+		1150039B27DBD6B5001BD267 /* Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1150039A27DBD6B5001BD267 /* Secure.swift */; };
 		11E28C9227DA7AE7008CF3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E28C9127DA7AE7008CF3BA /* AppDelegate.swift */; };
 		11E28C9427DA7AE7008CF3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E28C9327DA7AE7008CF3BA /* SceneDelegate.swift */; };
 		11E28C9627DA7AE7008CF3BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E28C9527DA7AE7008CF3BA /* ViewController.swift */; };
 		11E28C9927DA7AE7008CF3BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E28C9727DA7AE7008CF3BA /* Main.storyboard */; };
 		11E28C9B27DA7AE9008CF3BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E28C9A27DA7AE9008CF3BA /* Assets.xcassets */; };
 		11E28C9E27DA7AE9008CF3BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E28C9C27DA7AE9008CF3BA /* LaunchScreen.storyboard */; };
+		11E28CB027DA7D04008CF3BA /* JWPlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11E28CAF27DA7D04008CF3BA /* JWPlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1150039A27DBD6B5001BD267 /* Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secure.swift; sourceTree = "<group>"; };
 		11E28C8E27DA7AE7008CF3BA /* JWPageControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWPageControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E28C9127DA7AE7008CF3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E28C9327DA7AE7008CF3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		11E28C9A27DA7AE9008CF3BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E28C9D27DA7AE9008CF3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E28C9F27DA7AE9008CF3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E28CA527DA7B12008CF3BA /* JWPageControllerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JWPageControllerDemo.entitlements; sourceTree = "<group>"; };
+		11E28CAD27DA7C21008CF3BA /* JWPlayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = JWPlayer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E28CB027DA7D04008CF3BA /* JWPlayerKit in Frameworks */,
+				1150039727DBBFAE001BD267 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +48,10 @@
 		11E28C8527DA7AE6008CF3BA = {
 			isa = PBXGroup;
 			children = (
+				11E28CAC27DA7C21008CF3BA /* Packages */,
 				11E28C9027DA7AE7008CF3BA /* JWPageControllerDemo */,
 				11E28C8F27DA7AE7008CF3BA /* Products */,
+				11E28CA627DA7B12008CF3BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +66,7 @@
 		11E28C9027DA7AE7008CF3BA /* JWPageControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11E28CA527DA7B12008CF3BA /* JWPageControllerDemo.entitlements */,
 				11E28C9127DA7AE7008CF3BA /* AppDelegate.swift */,
 				11E28C9327DA7AE7008CF3BA /* SceneDelegate.swift */,
 				11E28C9527DA7AE7008CF3BA /* ViewController.swift */,
@@ -65,6 +76,21 @@
 				11E28C9F27DA7AE9008CF3BA /* Info.plist */,
 			);
 			path = JWPageControllerDemo;
+			sourceTree = "<group>";
+		};
+		11E28CA627DA7B12008CF3BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11E28CAC27DA7C21008CF3BA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				11E28CAD27DA7C21008CF3BA /* JWPlayer */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,10 @@
 			dependencies = (
 			);
 			name = JWPageControllerDemo;
+			packageProductDependencies = (
+				11E28CAF27DA7D04008CF3BA /* JWPlayerKit */,
+				1150039627DBBFAE001BD267 /* Reusable */,
+			);
 			productName = JWPageControllerDemo;
 			productReference = 11E28C8E27DA7AE7008CF3BA /* JWPageControllerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 11E28C8527DA7AE6008CF3BA;
+			packageReferences = (
+				1150039527DBBFAE001BD267 /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
 			productRefGroup = 11E28C8F27DA7AE7008CF3BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +174,7 @@
 				11E28C9627DA7AE7008CF3BA /* ViewController.swift in Sources */,
 				11E28C9227DA7AE7008CF3BA /* AppDelegate.swift in Sources */,
 				11E28C9427DA7AE7008CF3BA /* SceneDelegate.swift in Sources */,
+				1150039B27DBD6B5001BD267 /* Secure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JWPageControllerDemo/JWPageControllerDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8VC65F749H;
@@ -315,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JWPageControllerDemo/JWPageControllerDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8VC65F749H;
@@ -360,6 +396,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1150039527DBBFAE001BD267 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1150039627DBBFAE001BD267 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1150039527DBBFAE001BD267 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+		11E28CAF27DA7D04008CF3BA /* JWPlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JWPlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11E28C8627DA7AE7008CF3BA /* Project object */;
 }

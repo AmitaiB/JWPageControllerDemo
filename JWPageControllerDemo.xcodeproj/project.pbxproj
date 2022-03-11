@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1150039727DBBFAE001BD267 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 1150039627DBBFAE001BD267 /* Reusable */; };
+		1150039927DBBFE5001BD267 /* PlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1150039827DBBFE5001BD267 /* PlayerViewController.storyboard */; };
 		1150039B27DBD6B5001BD267 /* Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1150039A27DBD6B5001BD267 /* Secure.swift */; };
 		11E28C9227DA7AE7008CF3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E28C9127DA7AE7008CF3BA /* AppDelegate.swift */; };
 		11E28C9427DA7AE7008CF3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E28C9327DA7AE7008CF3BA /* SceneDelegate.swift */; };
@@ -59,6 +60,7 @@
 				11E28C9527DA7AE7008CF3BA /* HomeViewController.swift */,
 				11E28CB127DA7F03008CF3BA /* PageViewController.swift */,
 				11E28CB327DA7F2B008CF3BA /* PlayerViewController.swift */,
+				1150039827DBBFE5001BD267 /* PlayerViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +189,7 @@
 			files = (
 				11E28C9E27DA7AE9008CF3BA /* LaunchScreen.storyboard in Resources */,
 				11E28C9B27DA7AE9008CF3BA /* Assets.xcassets in Resources */,
+				1150039927DBBFE5001BD267 /* PlayerViewController.storyboard in Resources */,
 				11E28C9927DA7AE7008CF3BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

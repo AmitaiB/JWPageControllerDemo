@@ -7,7 +7,8 @@
 
 import UIKit
 import JWPlayerKit
+import Reusable
 
-class PlayerViewController: JWPlayerViewController {
+class PlayerViewController: JWPlayerViewController, StoryboardBased {
     
 }

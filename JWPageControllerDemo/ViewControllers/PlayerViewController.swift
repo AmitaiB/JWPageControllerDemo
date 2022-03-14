@@ -7,9 +7,9 @@
 
 import UIKit
 import JWPlayerKit
-import Reusable
 
-class PlayerViewController: JWPlayerViewController, StoryboardBased {
+
+class PlayerViewController: JWPlayerViewController {
     weak var indexTrackingDelegate: IndexTrackingDelegate?
     private(set) var index: Int!
     
@@ -78,5 +78,23 @@ class PlayerViewController: JWPlayerViewController, StoryboardBased {
     override func jwplayer(_ player: JWPlayer, encounteredAdWarning code: UInt, message: String) {
         super.jwplayer(player, encounteredAdWarning: code, message: message)
         print(#function, "\n * code: \(code)\n * message: \(message)")
+    }
+}
+
+extension PlayerViewController {
+    /// Get the storyboard with the same name as the view controller...
+    static var sceneStoryboard: UIStoryboard {
+        return UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
+    }
+    
+    /// Type-safe syntactic sugar for `UIStoryboard`'s method: `instantiateInitialViewController`
+    /// — Instantiates this view controller in a type-safe way.
+    /// - precondition: Have a storyboard named after this view controller, with it set as the `initialViewController`.
+    static func instantiate() -> Self {
+        let viewController = sceneStoryboard.instantiateInitialViewController()
+        guard let typedViewController = viewController as? Self else {
+            fatalError("The initialViewController of '\(sceneStoryboard)' is not of class '\(self)'")
+        }
+        return typedViewController
     }
 }

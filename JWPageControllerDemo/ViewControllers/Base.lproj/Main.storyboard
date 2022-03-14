@@ -11,19 +11,8 @@
         <!--Page View Controller-->
         <scene sceneID="VEO-gn-0nN">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="3LW-DM-C3c" customClass="PageViewController" customModule="JWPageControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <connections>
-                        <outlet property="pageControl" destination="W1E-MN-C3E" id="VbA-Yf-mYb"/>
-                    </connections>
-                </pageViewController>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="3LW-DM-C3c" customClass="PageViewController" customModule="JWPageControllerDemo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOZ-CB-0aI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" id="W1E-MN-C3E">
-                    <rect key="frame" x="0.0" y="0.0" width="116" height="26"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <connections>
-                        <action selector="pageControlValueChanged:" destination="3LW-DM-C3c" eventType="valueChanged" id="aWI-nR-ksm"/>
-                    </connections>
-                </pageControl>
             </objects>
             <point key="canvasLocation" x="884" y="125"/>
         </scene>

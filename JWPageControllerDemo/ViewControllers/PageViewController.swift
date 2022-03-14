@@ -12,9 +12,8 @@ protocol IndexTrackingDelegate: AnyObject {
 }
 
 class PageViewController: UIPageViewController {
-    var mediaPlaylist = Playlist.HardCoded.imdb_videos_10March2022
+    var mediaPlaylist = Playlist.HardCoded.imdb_videos_14March2022
     var currentPageIndex = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +38,6 @@ extension PageViewController: IndexTrackingDelegate {
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
-    // ✅ before
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         let pageIndexBefore = currentPageIndex - 1
         
@@ -53,7 +51,6 @@ extension PageViewController: UIPageViewControllerDataSource {
         return beforeVC
     }
     
-    // ✅ after
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let pageIndexAfter = currentPageIndex + 1
         
@@ -65,16 +62,5 @@ extension PageViewController: UIPageViewControllerDataSource {
                           index: pageIndexAfter,
                           indexDelegate: self)
         return afterVC
-    }
-    
-    // ✅
-    func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        mediaPlaylist.count
-    }
-    
-    // ✅
-    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        // IndexTrackingDelegate is all for this:
-        currentPageIndex
     }
 }
